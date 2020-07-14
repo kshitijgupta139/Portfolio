@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/portfolio.jpg') }}">
+<!-- 
+
+Timeless Template 
+
+http://www.templatemo.com/tm-517-timeless
+
+-->
+    <!-- load CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">     
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='templatemo-style.css') }}">  
+    <!-- Templatemo style -->
+
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 3px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:{
+  background-color: grey;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <header class="text-center tm-site-header">
+                    <div class="tm-site-logo"></div>
+                    <h1 class="pl-4 tm-site-title">Kshitij Gupta</h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tm-video-container">
+                    <video id="tm-welcome-video" class="tm-welcome-video" autoplay loop muted="">
+                        <source src="{{ url_for('static', filename='video/video.mp4') }}" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
+                        <div id="tm-video-loader"></div>
+                        <div id="tm-video-text-overlay" class="tm-video-text-overlay d-none">
+                            <h1>
+                                <div id="rotate" class="tm-video-text">
+                                    <div>Welcome to my</div>
+                                    <div>Personal Portfolio</div>
+                                    
+                                </div>
+                            </h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tm-container-2">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="tm-welcome-text">Have a look on my Skills and Achievements</h2>
+                </div>
+            </div>
+            <div class="row tm-section-mb">
+                <div class="col-lg-12">
+                    <div class=" tm-timeline-item">
+                        <div class="tm-timeline-item-inner">
+                            <img src="{{ url_for('static', filename='img/kg.jpg') }}" alt="Image" class="rounded-circle tm-img-timeline">
+                            <div class="tm-timeline-connector">
+                                <p class="mb-0">&nbsp;</p>
+                            </div>
+                            <div class="tm-timeline-description-wrap">
+                                <div class="tm-bg-dark tm-timeline-description">
+                                    <h3 class="tm-text-green tm-font-400">About Me</h3>
+                                    <p>I am Kshitij Gupta. I graduated with degree in Information Technology from SPPU. I am a fast learner. As a developer, I have interest in Data science, Big Data Analysis and Web Development.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tm-timeline-connector-vertical"></div>
+                    </div>
+
+                    <div class="tm-timeline-item">
+                        <div class="tm-timeline-item-inner">
+                            <img src="{{ url_for('static', filename='img/code.jpg') }}" alt="Image" class="rounded-circle tm-img-timeline">
+                            <div class="tm-timeline-connector">
+                                <p class="mb-0">&nbsp;</p>
+                            </div>
+                            <div class="tm-timeline-description-wrap">
+                                <div class="tm-bg-dark-light tm-timeline-description">
+                                    <h3 class="tm-text-cyan tm-font-400">Programming Languages</h3>
+                                    <p>
+                                        <ul>
+                                            <li>C</li>
+                                            <li>C++</li>
+                                            <li>Java</li>
+                                            <li>Python</li>
+                                        </ul>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tm-timeline-connector-vertical"></div>
+                    </div>
+
+                    <div class="tm-timeline-item">
+                        <div class="tm-timeline-item-inner">
+                            <img src="{{ url_for('static', filename='img/database.jpg') }}" alt="Image" class="rounded-circle tm-img-timeline">
+                            <div class="tm-timeline-connector">
+                                <p class="mb-0">&nbsp;</p>
+                            </div>
+                            <div class="tm-timeline-description-wrap">
+                                <div class="tm-bg-dark tm-timeline-description">
+                                    <h3 class="tm-text-yellow tm-font-400">Databases and Web development</h3>
+                                    <p>
+                                        <ul>
+                                            <li>Database : Have good knowledge of MySQL.</li>
+                                            <li>Web Development : Basics of HTML, CSS and Flask.</li>
+                                            
+                                        </ul>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tm-timeline-connector-vertical"></div>
+                    </div>
+
+                    <div class="tm-timeline-item">
+                        <div class="tm-timeline-item-inner">
+                            <img src="{{ url_for('static', filename='img/internship.jpg') }}" alt="Image" class="rounded-circle tm-img-timeline">
+                            <div class="tm-timeline-connector">
+                                <p class="mb-0">&nbsp;</p>
+                            </div>
+                            <div class="tm-timeline-description-wrap">
+                                <div class="tm-bg-dark tm-timeline-description">
+                                    <h3 class="tm-text-yellow tm-font-400">Internships</h3>
+                                    <p>
+                                        <ul>
+                                            <li>Deloitte Consulting</li>
+                                            <li>JPMorgan Chase & Co.</li>
+                                            <li>ExpertsHub MLAI</li>
+                                            
+                                        </ul>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tm-timeline-connector-vertical"></div>
+                    </div>
+
+                    <div class="tm-timeline-item">
+                        <div class="tm-timeline-item-inner">
+                            <img src="{{ url_for('static', filename='img/cer.jpg') }}" alt="Image" class="rounded-circle tm-img-timeline">
+                            <div class="tm-timeline-connector">
+                                <p class="mb-0">&nbsp;</p>
+                            </div>
+                            <div class="tm-timeline-description-wrap">
+                                <div class="tm-bg-dark-light tm-timeline-description">
+                                    <h3 class="tm-text-orange tm-font-400">Certifications</h3>
+                                    <p>
+                                        <ul>
+                                            <li>Python by Spoken Tutorial, IIT Bombay.</li>
+                                            <li>Programming for Everybody(Python Programming) on Coursera.</li>
+                                            <li>Python Data Structure on Coursera.</li>
+                                            <li>SQL on Coursera.</li>
+                                            <li>Google Analytics for Beginners by Google.</li>
+                                            <li>Advanced Google Analytics by Google.</li>
+                                            <li>Web Development by The Climber.</li>
+                                        </ul>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--  row -->
+            <hr>
+
+    <table>
+  <tr>
+    <th>Degree/Certificate</th>
+    <th>School/College</th>
+    <th>Board/University</th>
+    <th>Year of Passing</th>
+    <th>Percentage/CGPA</th>
+  </tr>
+  <tr>
+    <td>B.E</td>
+    <td>Sinhgad College of Engineering Pune</td>
+    <td>SPPU</td>
+    <td>2020</td>
+    <td>8.77</td>
+  </tr>
+  <tr>
+    <td>HSC</td>
+    <td>H.P.T Arts and R.Y.K Science College Nashik</td>
+    <td>Maharashtra Board</td>
+    <td>2016</td>
+    <td>87.85</td>
+  </tr>
+  <tr>
+    <td>SSC</td>
+    <td>Kilbil St. Joseph's High School Nashik</td>
+    <td>Maharashtra Board</td>
+    <td>2014</td>
+    <td>91.60</td>
+  </tr>
+</table>
+<hr>
+            <div class="row tm-section-mb tm-section-mt">
+                <div class="col-lg-4 col-md-4 col-sm-12 pr-lg-5 mb-md-0 mb-4">
+                    <h3 class="mt-2 mb-3 tm-text-gray">Project 1: Anti-Ransomware Tool</h3>
+                    <p> The main aim of this project is to detect ransomware's usual behaviour and denying operations
+                    on user's valuable data along with providing data recovery mechanism. My role was to develop UI
+                    and testing. The project was done in C#.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 pr-lg-5 mb-md-0 mb-4">
+                    <h3 class="mt-2 mb-3 tm-text-gray">Project 2: Online Voting System</h3>
+                    <p> A mini-project built using Java and MySQL. The main aim is to help people avoid going to the alloted location for voting and easily vote from their home.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="mt-2 mb-3 tm-text-gray">Project 3: Jarvis AI Desktop Voice Assistant</h3>
+                    <p> A guided project built using Python. It is built to reduce the manual work of users and automate their work.</p>
+                </div>
+
+                 <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="mt-2 mb-3 tm-text-gray">Project 4: Personal Portfolio</h3>
+                    <p> A self-made project built using HTML/CSS template and flask for backend. Can save the contact 
+                    details in database and also in a separate text file.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="mt-2 mb-3 tm-text-gray">Project 5: Social Distance Monitoring</h3>
+                    <p> A guided project built using Python. This project is used to detect whether people are 
+                    maintaining social distancing or not.</p>
+                </div>
+            </div>
+            <hr>
+
+
+            <div class="row tm-section-mt">
+                
+               <div class="col-lg-6 mb-5">
+                <h3 class="mb-4 tm-text-gray">Contact Me</h3>
+               <form action="/submit_form" method="post" class="reveal-content">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" rows="5" name="message" placeholder="Message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-default btn-lg">Submit</button>
+                    </div>
+                    
+                  </div>
+                </form>
+
+
+
+                
+            </div>
+        </div>
+        <hr>
+        <!-- Footer -->
+        <footer class="row mt-5 mb-5">
+            <div class="col-lg-12">
+                <p>Thank you for visiting... </p>
+                <p>Email: kshitijgupta139@gmail.com</p>
+                <p>Github Link for portfolio code : <a href="https://github.com/kshitijgupta139/Portfolio.git">
+                https://github.com/kshitijgupta139/Portfolio.git</a></p>
+            </div>
+        </footer>
+    </div>
+    <!-- .container -->
+
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="{{ url_for('static', filename='templatemo-script.js') }}"></script>
+
+</body>
+</html>
+
+
+
+
